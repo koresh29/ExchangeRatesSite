@@ -2,14 +2,73 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Тест</title>
+    <link rel="icon" href="img/ico.ico" type="image/x-icon">
+    <title>Kharkiv exchange</title>
 
     <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
+<div class="container">
+    <div class="row">
+
+    <header class="page-header text-center">
+        <h1>Kharkiv exchange</h1>
+    </header>
+            <div class="container">
+    <div class="navbar navbar-inverse">
+        <div class="navbar-header">
+        <a class="navbar-brand pull-left"><i class="glyphicon glyphicon-home"></i>&nbsp Главная</a>
+         </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">Курсы на сегодня</a></li>
+                <li><a href="#">Пункты обмена</a></li>
+                <li><a href="#">Просчет валютных операций</a></li>
+            </ul>
+
+                 <ul class="nav navbar-nav pull-right">
+                <li><a href="#">Войти</a> </li>
+                <li><a href="#">Регистрация</a> </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+<div class="container pagination-centered" >
+    <div  class="carousel slide"  id="myCarousel"  data-interval="3000" data-ride="carousel"  data-wrap="true" >
+    <ol class="carousel-indicators" >
+        <li class="active"  data-target="#myCarousel" data-slide-to="0"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+         </ol>
+<div class="carousel-inner">
+<div class="active item" >
+    <img src="img/img_1.jpg"/>
+
+    </div>
+    <div class="item">
+        <img src="img/img_2.jpg"/>
+
+    </div>
+    <div class="item">
+        <img src="img/img_3.jpg"/>
+
+    </div>
+    </div>
+<a class = "left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left "></span> </a>
+<a class= "right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+</div>
+<div class="container">
+    <div class="pagination-centered">
+    <table class="pagination-centered">
+        <tr><th><h2>Курс НБУ</h2></th></tr>
+        <tr><td><h3>Доллар</h3></td></tr>
+    </table>
+</div>
+    </div>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<p>Hello app</p>
+<script src="bootstrap/js/bootstrap.js"></script>
 </body>
 </html>

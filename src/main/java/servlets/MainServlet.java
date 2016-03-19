@@ -17,7 +17,7 @@ public class MainServlet extends HttpServlet {
         public void doGet(HttpServletRequest req, HttpServletResponse resp)
                 throws ServletException, IOException {
 
-            req.getRequestDispatcher("Home.html").forward(req, resp);
+            req.getRequestDispatcher("test.html").forward(req, resp);
 
         }
 
@@ -25,7 +25,7 @@ public class MainServlet extends HttpServlet {
         protected void doPost(HttpServletRequest req, HttpServletResponse resp)
                 throws ServletException, IOException {
 
-            super.doPost(req, resp);
+            super.doPost(req,resp);
         }
 
     }
