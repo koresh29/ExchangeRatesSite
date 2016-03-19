@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/ico.ico" type="image/x-icon">
+    <title>Kharkiv exchange</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+
+            <div class="navbar navbar-inverse">
+                <div class="navbar-header">
+                    <a class="navbar-brand pull-left"><i class="glyphicon glyphicon-home"></i>&nbsp Главная</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Курсы на сегодня</a></li>
+                    <li><a href="#">Пункты обмена</a></li>
+                    <li><a href="#">Просчет валютных операций</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="#">Войти</a> </li>
+                    <li><a href="#">Регистрация</a> </li>
+                </ul>
+            </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="container center-block">
+    <a href="http://localhost:8080/test/">Узнать курс доллара</a>
+
+</div>
+<script type="text/javascript">
+       function AjaxFormRequest(result_id,url) {
+        jQuery.ajax({
+            url:     url, //Адрес подгружаемой страницы
+            type:     "GET", //Тип запроса
+           // dataType: "JSON", //Тип данных
+                   success: function(response) { //Если все нормально
+                document.getElementById(result_id).innerHTML = response;
+            },
+            error: function(response) { //Если ошибка
+            document.getElementById(result_id).innerHTML = response;
+             console.log(response);
+            }
+        });
+    }
+    onload(AjaxFormRequest('usdc','/getusd'));
+</script>
+<p>USD course</p>
+<div id="usdc"></div>
+</body>
+</html>
